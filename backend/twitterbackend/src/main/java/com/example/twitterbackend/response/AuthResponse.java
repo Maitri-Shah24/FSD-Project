@@ -1,4 +1,4 @@
-package response;
+package com.example.twitterbackend.response;
 
 import lombok.*;
 

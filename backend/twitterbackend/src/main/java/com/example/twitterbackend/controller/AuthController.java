@@ -1,10 +1,9 @@
-package controller;
+package com.example.twitterbackend.controller;
 
-import config.JwtProvider;
-import exception.UserException;
-import jdk.jshell.spi.ExecutionControl;
-import model.User;
-import model.Verification;
+import com.example.twitterbackend.config.JwtProvider;
+import com.example.twitterbackend.exception.UserException;
+import com.example.twitterbackend.model.User;
+import com.example.twitterbackend.model.Verification;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,9 +17,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import repository.UserRepository;
-import response.AuthResponse;
-import service.CustomUserDetailServiceImplementation;
+import com.example.twitterbackend.repository.UserRepository;
+import com.example.twitterbackend.response.AuthResponse;
+import com.example.twitterbackend.service.CustomUserDetailServiceImplementation;
 
 @RestController
 @RequestMapping("/auth")
@@ -52,7 +51,7 @@ public class AuthController
         User createdUser = new User();
         createdUser.setEmail(email);
         createdUser.setFullName(fullName);
-        createdUser.setPassword(password);
+        createdUser.setPassword(passwordEncoder.encode(password));
         createdUser.setBirthDate(birthDate);
         createdUser.setVerification(new Verification());
 

@@ -1,4 +1,4 @@
-package model;
+package com.example.twitterbackend.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -9,7 +9,7 @@ import lombok.Data;
 public class Like
 {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @ManyToOne
@@ -17,6 +17,5 @@ public class Like
 
     @ManyToOne
     private Tweet tweet;
-
 
 }

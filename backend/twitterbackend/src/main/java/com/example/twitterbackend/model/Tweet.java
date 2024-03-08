@@ -1,8 +1,9 @@
-package model;
+package com.example.twitterbackend.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,13 +29,15 @@ public class Tweet
     private List<Tweet> replyTweets = new ArrayList<>();
 
     @ManyToMany
-    private List<User> reTweetUsers = new ArrayList<>();
+    private List<User> reTweetUser = new ArrayList<>();
 
     @ManyToOne
     private Tweet replyFor;
 
     private boolean isReply;
     private  boolean isTweet;
+
+    private LocalDateTime CreatedAt;
 
 
 

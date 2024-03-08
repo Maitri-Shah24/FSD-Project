@@ -1,4 +1,4 @@
-package exception;
+package com.example.twitterbackend.exception;
 
 public class UserException extends Exception
 {

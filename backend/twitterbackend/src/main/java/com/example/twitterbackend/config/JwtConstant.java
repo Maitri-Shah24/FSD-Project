@@ -1,4 +1,4 @@
-package config;
+package com.example.twitterbackend.config;
 
 public class JwtConstant {
     public static final String SECRET_KET = "hsbsdhbdbjbdjejfjfjfjjjbdjcbhjsbchjsbhjcbjhcbb";

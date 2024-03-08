@@ -1,9 +1,8 @@
-package model;
+package com.example.twitterbackend.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
-import org.springframework.boot.autoconfigure.security.saml2.Saml2RelyingPartyProperties;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +13,7 @@ public class User
 {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long Id;
+    private Long id;
 
     private String fullName;
     private String location;
