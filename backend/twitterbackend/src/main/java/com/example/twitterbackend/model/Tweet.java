@@ -9,6 +9,7 @@ import java.util.List;
 
 @Entity
 @Data
+@Table(name = "tweets")
 public class Tweet
 {
     @Id
@@ -22,7 +23,7 @@ public class Tweet
     private String image;
     private String video;
 
-    @OneToMany(mappedBy = "Tweet",cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "tweet",cascade = CascadeType.ALL)
     private List<Like> likes = new ArrayList<>();
 
     @OneToMany
@@ -37,7 +38,7 @@ public class Tweet
     private boolean isReply;
     private  boolean isTweet;
 
-    private LocalDateTime CreatedAt;
+    private LocalDateTime createdAt;
 
 
 
