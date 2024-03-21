@@ -1,7 +1,31 @@
-Project Title: Twitter-Clone 
-Description: Uses react,springboot,mysql as technolgy.Signin ,Signup,Profile page, Home page and Verification Page.
-Installation: Node.js, npm, redux,axios,spring.io project for beackend--> Spring dependencies
-Contact:Mobile: 8128080824
-Email: mdshah2403@gmail.com
+#TWITTER CLONE:
 
+
+## Overview
+
+This project is a web-based project management system designed to help users track multiple projects, each with its own 
+set of tasks. The frontend is built using React, the backend is implemented with Spring Boot, and MySQL is used as the 
+database.
+
+## Features
+ -user authentication
+ -Home Page
+ -Profile Page 
+ -Verification Page
+ -Comments
+ -Post Video or Image
+ -Reply to Tweet and Tweet
+ -Edit profile using Profile image and background image.
+ 
+## Technologies Used:
+
+-React
+-React Router
+-React Redux
+-Axios
+-Spring boot
+-Spring JPA
+-MYSQL
+-Material UI
+-Twainland CSS
 
