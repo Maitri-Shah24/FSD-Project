@@ -3,6 +3,12 @@
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.10",
-    "@mui/material": "^5.15.10"
+    "@mui/material": "^5.15.10",
+    "@react-oauth/google": "^0.12.1",
+    "axios": "^1.6.8",
+    "formik": "^2.4.5",
+    "redux": "^5.0.1",
+    "redux-thunk": "^3.1.0",
+    "yup": "^1.4.0"
   }
 }

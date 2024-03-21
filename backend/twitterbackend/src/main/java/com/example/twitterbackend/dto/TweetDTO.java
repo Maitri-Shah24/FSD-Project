@@ -13,7 +13,7 @@ public class TweetDTO {
 
     private String video;
     private UserDTO user;
-    private LocalDateTime createdAt;
+        private LocalDateTime createdAt;
 
     private int totalLikes;
 
